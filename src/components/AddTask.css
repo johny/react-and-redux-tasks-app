@@ -1,0 +1,43 @@
+.AddTask {
+  margin: 0;
+  padding: 0;
+}
+
+.AddTask__fieldset {
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.AddTask__input {
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+  flex: 1;
+}
+
+.AddTask__input:focus {
+  outline: none
+}
+
+.AddTask__button {
+  padding: 1rem;
+  border: none;
+  margin: 0 0 0 0.5rem;
+  font-size: 2rem;
+  background: #2ecc71;
+  border-bottom: 2px solid #27ae60;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.AddTask__button:focus {
+  background: #27ae60;
+  outline: none;
+}
