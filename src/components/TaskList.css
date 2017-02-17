@@ -1,0 +1,50 @@
+.TaskList {
+
+}
+
+.TaskList__list {
+  margin: 1rem 0;
+  padding: 1rem 0.5rem;
+}
+
+.TaskList__task {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.TaskList__checkmark {
+  display: inline-block;
+  background: #fff;
+  color: #eee;
+  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  margin: 0 0.5rem 0 0;
+  border-radius: 2rem;
+  vertical-align: text-top;
+  transition: color 0.2s ease-in-out;
+}
+
+.TaskList__task:hover {
+  color: #000;
+}
+
+.TaskList__task:hover .TaskList__checkmark {
+  color: #2ecc71;
+}
+
+/* For completed task */
+.TaskList__text--completed {
+  text-decoration: line-through;
+}
+
+.TaskList__checkmark--completed {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.TaskList__task--completed:hover .TaskList__checkmark {
+  color: #fff;
+}

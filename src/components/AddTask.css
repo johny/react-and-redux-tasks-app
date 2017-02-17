@@ -7,13 +7,13 @@
   border: none;
   display: flex;
   justify-content: flex-end;
-  max-width: 50rem;
   margin: 0 auto;
 }
 
 .AddTask__input {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0;
   border: none;
   border-bottom: 2px solid #ccc;
   background: #fff;
@@ -26,10 +26,10 @@
 }
 
 .AddTask__button {
-  padding: 1rem;
-  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
   margin: 0 0 0 0.5rem;
-  font-size: 2rem;
+  border: none;
   background: #2ecc71;
   border-bottom: 2px solid #27ae60;
   color: #fff;
