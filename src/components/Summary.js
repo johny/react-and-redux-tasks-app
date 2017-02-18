@@ -2,6 +2,8 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
+import FilterLink from '../containers/FilterLink';
+
 import './Summary.css';
 
 const mapStateToProps = (state) => {
@@ -15,11 +17,11 @@ const mapStateToProps = (state) => {
 let Summary = ({total, completed, remaining}) => {
   return (
     <div className="Summary">
-      <span className="Summary__count">Total: {total}</span>
+      <FilterLink filter="SHOW_ALL" className="Summary__item">Total: {total}</FilterLink>
       <span className="Summary__separator">/</span>
-      <span className="Summary__count">Remaining: {remaining}</span>
+      <FilterLink filter="SHOW_REMAINING" className="Summary__item">Remaining: {remaining}</FilterLink>
       <span className="Summary__separator">/</span>
-      <span className="Summary__count">Completed: {completed}</span>
+      <FilterLink filter="SHOW_COMPLETED" className="Summary__item">Completed: {completed}</FilterLink>
     </div>
   )
 }

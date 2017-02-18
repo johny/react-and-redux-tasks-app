@@ -2,11 +2,12 @@
   padding: 1rem;
   font-size: 0.8rem;
   border-top: 1px solid #ccc;
-  color: #999;
+  color: #888;
 }
 
-.Summary__count {
+.Summary__item {
   margin: 0rem;
+  color: #888;
 }
 
 .Summary__separator {

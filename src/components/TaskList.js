@@ -18,6 +18,11 @@ const Task = ({onClick, text, completed}) => {
 }
 
 const TaskList = ({ tasks, onTaskClick }) => {
+
+  if (tasks.length === 0) {
+    return <div className="TaskList TaskList--empty">You don't have any tasks in this view...</div>;
+  }
+
   return (
     <div className="TaskList">
       <ul className="TaskList__list">
