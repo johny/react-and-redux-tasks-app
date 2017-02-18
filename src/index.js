@@ -6,9 +6,19 @@ import { createStore } from 'redux';
 import appReducer from './reducers';
 import App from './components/App';
 
+import { loadState, saveState } from './services/localStorage';
+
 import './index.css';
 
-const store = createStore(appReducer)
+// load state
+const persistedState = loadState();
+const store = createStore(appReducer, persistedState)
+
+// subscribe to store changes
+store.subscribe(() => {
+  saveState(store.getState());
+});
+
 
 ReactDOM.render(
   <Provider store={store}>
