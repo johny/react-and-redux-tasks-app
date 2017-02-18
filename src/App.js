@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import AddTask from './components/AddTask';
-import TaskList from './components/TaskList';
+import VisibleTaskList from './containers/VisibleTaskList';
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
         <div className="App__headline">Tasks</div>
         <div className="App__content">
           <AddTask />
-          <TaskList />
+          <VisibleTaskList />
         </div>
       </div>
     );
