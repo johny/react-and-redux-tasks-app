@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import AddTask from './components/AddTask';
-import VisibleTaskList from './containers/VisibleTaskList';
-import Summary from './components/Summary';
+import AddTask from './AddTask';
+import VisibleTaskList from '../containers/VisibleTaskList';
+import Summary from './Summary';
 
 class App extends Component {
   render() {
